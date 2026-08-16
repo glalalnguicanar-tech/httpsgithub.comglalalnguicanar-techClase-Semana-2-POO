@@ -1,48 +1,49 @@
-from typing import List
+"""Servicio Restaurante: administra productos y clientes."""
 
-from ..modelos.cliente import Cliente
-from ..modelos.producto import Producto
+from typing import List, Optional
+from modelos.producto import Producto
+from modelos.cliente import Cliente
 
 
 class Restaurante:
     def __init__(self) -> None:
-        self.clientes: List[Cliente] = []
-        self.productos: List[Producto] = []
+        # Listas internas para almacenar objetos
+        self._productos: List[Producto] = []
+        self._clientes: List[Cliente] = []
 
-    def agregar_cliente(self, cliente: Cliente) -> None:
-        self.clientes.append(cliente)
+    # Métodos para productos
+    def registrar_producto(self, producto: Producto) -> None:
+        """Registra un producto en la lista.
 
-    def eliminar_cliente(self, correo_electronico: str) -> bool:
-        for cliente in self.clientes:
-            if cliente.correo_electronico == correo_electronico:
-                self.clientes.remove(cliente)
-                return True
-        return False
-
-    def listar_clientes(self) -> List[Cliente]:
-        return list(self.clientes)
-
-    def agregar_producto(self, producto: Producto) -> None:
-        self.productos.append(producto)
-
-    def eliminar_producto(self, nombre_producto: str) -> bool:
-        for producto in self.productos:
-            if producto.nombre == nombre_producto:
-                self.productos.remove(producto)
-                return True
-        return False
+        Lanza ValueError si ya existe un producto con el mismo nombre (caso-insensible).
+        """
+        if any(p.nombre.lower() == producto.nombre.lower() for p in self._productos):
+            raise ValueError("Ya existe un producto con ese nombre.")
+        self._productos.append(producto)
 
     def listar_productos(self) -> List[Producto]:
-        return list(self.productos)
+        return list(self._productos)
 
-    def buscar_producto_por_categoria(self, categoria: str) -> List[Producto]:
-        return [producto for producto in self.productos if producto.categoria == categoria]
+    def buscar_producto(self, nombre: str) -> Optional[Producto]:
+        nombre = nombre.strip().lower()
+        for p in self._productos:
+            if p.nombre.lower() == nombre:
+                return p
+        return None
 
-    def buscar_cliente_por_nombre(self, nombre: str) -> List[Cliente]:
-        return [cliente for cliente in self.clientes if cliente.nombre == nombre]
+    # Métodos para clientes
+    def registrar_cliente(self, cliente: Cliente) -> None:
+        """Registra un cliente. Evita duplicados por `id_cliente`."""
+        if any(c.id_cliente == cliente.id_cliente for c in self._clientes):
+            raise ValueError("Ya existe un cliente con ese ID.")
+        self._clientes.append(cliente)
 
-    def __repr__(self) -> str:
-        return (
-            f"Restaurante(clientes={len(self.clientes)}, productos={len(self.productos)})"
-        )
- 
+    def listar_clientes(self) -> List[Cliente]:
+        return list(self._clientes)
+
+    def buscar_cliente(self, id_cliente: str) -> Optional[Cliente]:
+        id_cliente = id_cliente.strip()
+        for c in self._clientes:
+            if c.id_cliente == id_cliente:
+                return c
+        return None
