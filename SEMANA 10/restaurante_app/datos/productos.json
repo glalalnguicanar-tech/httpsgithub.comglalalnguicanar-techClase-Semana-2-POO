@@ -1,0 +1,14 @@
+[
+    {
+        "codigo": "P001",
+        "nombre": "Pizza Margherita",
+        "categoria": "Pizzas",
+        "precio": 16.99
+    },
+    {
+        "codigo": "P002",
+        "nombre": "Pasta a la Carbonara",
+        "categoria": "Pastas",
+        "precio": 12.5
+    }
+]
