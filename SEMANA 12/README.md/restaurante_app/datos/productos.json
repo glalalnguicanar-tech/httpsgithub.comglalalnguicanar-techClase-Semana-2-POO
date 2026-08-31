@@ -1,0 +1,44 @@
+[
+    {
+        "codigo": "PROD001",
+        "nombre": "Hamburguesa Clásica",
+        "categoria": "Platos Principales",
+        "precio": 12.50,
+        "stock": 20
+    },
+    {
+        "codigo": "PROD002",
+        "nombre": "Pizza Margherita",
+        "categoria": "Platos Principales",
+        "precio": 14.99,
+        "stock": 15
+    },
+    {
+        "codigo": "PROD003",
+        "nombre": "Ensalada César",
+        "categoria": "Ensaladas",
+        "precio": 9.50,
+        "stock": 25
+    },
+    {
+        "codigo": "BEBIDA001",
+        "nombre": "Coca-Cola",
+        "categoria": "Bebidas",
+        "precio": 2.50,
+        "stock": 50
+    },
+    {
+        "codigo": "BEBIDA002",
+        "nombre": "Jugo de Naranja",
+        "categoria": "Bebidas",
+        "precio": 3.00,
+        "stock": 40
+    },
+    {
+        "codigo": "POSTRE001",
+        "nombre": "Tiramisú",
+        "categoria": "Postres",
+        "precio": 7.99,
+        "stock": 10
+    }
+]
