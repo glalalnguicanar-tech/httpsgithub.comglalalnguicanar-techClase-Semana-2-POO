@@ -1,0 +1,5 @@
+[
+	{"nombre": "Hamburguesa clásica", "precio": 18000, "cantidad": 12},
+	{"nombre": "Pizza personal", "precio": 22000, "cantidad": 8},
+	{"nombre": "Limonada natural", "precio": 7000, "cantidad": 20}
+]
