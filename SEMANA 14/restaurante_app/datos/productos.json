@@ -1,0 +1,23 @@
+[
+    {
+        "codigo": "P001",
+        "nombre": "Hamburguesa clásica",
+        "categoria": "Plato principal",
+        "precio": 18000.0,
+        "cantidad": 12
+    },
+    {
+        "codigo": "P002",
+        "nombre": "Pizza personal",
+        "categoria": "Plato principal",
+        "precio": 22000.0,
+        "cantidad": 8
+    },
+    {
+        "codigo": "B001",
+        "nombre": "Limonada natural",
+        "categoria": "Bebida",
+        "precio": 7000.0,
+        "cantidad": 20
+    }
+]
