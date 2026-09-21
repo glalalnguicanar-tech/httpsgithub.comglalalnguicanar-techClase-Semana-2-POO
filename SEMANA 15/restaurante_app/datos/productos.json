@@ -1,0 +1,5 @@
+[
+	{"codigo": "P001", "nombre": "Hamburguesa clásica", "categoria": "plato fuerte", "precio": 18000, "cantidad": 12},
+	{"codigo": "P002", "nombre": "Pizza personal", "categoria": "plato fuerte", "precio": 22000, "cantidad": 8},
+	{"codigo": "P003", "nombre": "Limonada natural", "categoria": "bebida", "precio": 7000, "cantidad": 20}
+]

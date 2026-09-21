@@ -1,0 +1,4 @@
+[
+	{"nombre_usuario": "admin", "contrasena": "1234", "rol": "administrador"},
+	{"nombre_usuario": "mesero", "contrasena": "restaurante", "rol": "usuario"}
+]
