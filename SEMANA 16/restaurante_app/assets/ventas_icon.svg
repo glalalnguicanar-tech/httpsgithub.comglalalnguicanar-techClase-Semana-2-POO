@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" role="img" aria-label="Ventas">
+  <rect x="5" y="3" width="22" height="26" rx="3" fill="#e7f1ec" stroke="#176b5b" stroke-width="2"/>
+  <path d="M10 10h12M10 15h12M10 20h5" fill="none" stroke="#176b5b" stroke-linecap="round" stroke-width="2"/>
+  <circle cx="22" cy="22" r="5" fill="#f8d8a8" stroke="#176b5b" stroke-width="1.5"/>
+  <path d="M22 19v6m2-4c0-1-4-1-4 0s4 1 4 2-4 1-4 0" fill="none" stroke="#176b5b" stroke-linecap="round" stroke-width="1"/>
+</svg>

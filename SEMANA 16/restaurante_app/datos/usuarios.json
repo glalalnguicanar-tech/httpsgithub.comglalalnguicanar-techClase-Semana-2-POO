@@ -1,0 +1,4 @@
+[
+	{"id": 1, "nombre": "Administración", "nombre_usuario": "admin", "contrasena": "1234", "rol": "Administrador"},
+	{"id": 2, "nombre": "Equipo de salón", "nombre_usuario": "mesero", "contrasena": "restaurante", "rol": "Empleado"}
+]

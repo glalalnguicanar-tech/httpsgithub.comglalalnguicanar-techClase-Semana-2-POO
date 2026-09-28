@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Sabor Local">
+  <rect width="64" height="64" rx="12" fill="#176b5b"/>
+  <circle cx="32" cy="33" r="19" fill="none" stroke="#f8d8a8" stroke-width="4"/>
+  <circle cx="32" cy="33" r="11" fill="none" stroke="#f8d8a8" stroke-width="2"/>
+  <path d="M9 12v17m-4-17v9m8-9v9m-4 0v29M55 12c-5 4-7 10-7 17h7v21m0-38v38" fill="none" stroke="#fffdf8" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+</svg>
